@@ -49,6 +49,8 @@ TestResult.xml
 nunit-*.xml
 
 coverage.cobertura.xml
+coveragereport/
+TestResults/
 
 # Build Results of an ATL Project
 [Dd]ebugPS/
