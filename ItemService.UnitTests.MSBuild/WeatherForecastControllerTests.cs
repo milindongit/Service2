@@ -1,9 +1,9 @@
 using System;
 using Xunit;
 
-namespace ItemService.UnitTests
+namespace ItemService.UnitTests.MSBuild
 {
-    public class UnitTest1
+    public class WeatherForecastControllerTests
     {
         [Fact]
         public void Test1()

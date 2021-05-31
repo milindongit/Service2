@@ -19,4 +19,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ItemService\ItemService.csproj" />
+  </ItemGroup>
+
 </Project>
