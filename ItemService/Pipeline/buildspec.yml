@@ -8,8 +8,7 @@ phases:
         commands:
             - dotnet build -c Release ./ItemService/ItemService.csproj
             - dotnet test -c Release ./ItemService.UnitTests/ItemService.UnitTests.csproj --logger trx --results-directory ./testresults
-            - dotnet test  ./ItemService.UnitTests/ItemService.UnitTests.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
-            
+                        
 DotnetTestExamples:
     file-format: VisualStudioTrx
     files:
