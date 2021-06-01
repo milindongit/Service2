@@ -6,8 +6,8 @@ phases:
             dotnet: 3.1
     build:
         commands:
-            - dotnet build -c Release ./ItemService.csproj
-            - dotnet test -c Release ../ItemService.UnitTests/ItemService.UnitTests.csproj --logger trx --results-directory ./testresults
+            - dotnet build -c Release ./ItemService/ItemService.csproj
+            - dotnet test -c Release ./ItemService.UnitTests/ItemService.UnitTests.csproj --logger trx --results-directory ./testresults
 reports:
     DotnetTestExamples:
         file-format: VisualStudioTrx
