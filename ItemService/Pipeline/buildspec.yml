@@ -16,6 +16,7 @@ reports:
             - '**/*'
         base-directory: './testresults'
     CoverageExamples:
+        file-format: COBERTURAXML
         files:
-            - './testresults/coverage/coverage.cobertura.xml'
-        file-format: 'COBERTURAXML'
+            - '*.xml'
+        base-directory: './testresults/coverage'   
