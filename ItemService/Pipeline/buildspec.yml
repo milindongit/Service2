@@ -8,7 +8,7 @@ phases:
         commands:
             - dotnet build -c Release ./ItemService/ItemService.csproj
             - dotnet test -c Release ./ItemService.UnitTests/ItemService.UnitTests.csproj --logger trx --results-directory ./testresults
-            - dotnet test ItemService.UnitTests.MSBuild/ItemService.UnitTests.MSBuild.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura
+            - dotnet test ItemService.UnitTests.MSBuild/ItemService.UnitTests.MSBuild.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./TestResults/Coverage/'
 reports:
     DotnetTestExamples:
         file-format: VisualStudioTrx
@@ -17,5 +17,5 @@ reports:
         base-directory: './testresults'
     CoverageExamples:
         files:
-            - './ItemService.UnitTests/*/coverage.cobertura.xml'
+            - './testresults/Coverage/coverage.cobertura.xml'
         file-format: 'COBERTURAXML'
