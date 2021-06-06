@@ -19,4 +19,4 @@ reports:
         file-format: COBERTURAXML
         files:
             - '**/*'
-        base-directory: './testresults/coverage/'   
+        base-directory: './ItemService.UnitTests.MSBuild/testresults/coverage/'   
