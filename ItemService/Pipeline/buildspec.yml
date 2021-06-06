@@ -10,12 +10,12 @@ phases:
             - dotnet test -c Release ./ItemService.UnitTests/ItemService.UnitTests.csproj --logger trx --results-directory ./testresults
             - dotnet test ./ItemService.UnitTests.MSBuild/ItemService.UnitTests.MSBuild.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./testresults/coverage/
 reports:
-    DotnetTestExamples:
+    UnitTests:
         file-format: VisualStudioTrx
         files:
             - '**/*'
         base-directory: './testresults'
-    CoverageExamples:
+    CodeCoverage:
         file-format: COBERTURAXML
         files:
             - '**/*'
